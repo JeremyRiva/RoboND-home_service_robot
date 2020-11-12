@@ -24,7 +24,16 @@ First check for any package updates.
 Then install the ROS kinetic package.  
 `$ sudo apt-get install ros-kinetic-desktop `
 
-Once the package is upto date, create the catkin workspace and clone the official ROS packages into the workspace.
+Once the package is upto date, create the catkin workspace.
+```
+$ mkdir -p ~/catkin_ws/src
+$ cd ~/catkin_ws/src
+$ catkin_init_workspace
+$ cd ~/catkin_ws
+$ catkin_make
+```
+
+Then clone the official ROS packages into the workspace.
 ```
 $ cd ~catkin_ws/src
 $ git clone https://github.com/ros-perception/slam_gmapping.git
@@ -32,7 +41,7 @@ $ git clone https://github.com/turtlebot/turtlebot.git
 $ git clone https://github.com/turtlebot/turtlebot_interactions.git
 $ git clone https://github.com/turtlebot/turtlebot_simulator.git
 ```
-Move the white ball in front of the robot and it should start following it.
+
 ## Structure Overview
 
 Below the structure of the files is shown.
