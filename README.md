@@ -24,12 +24,12 @@ First check for any package updates.
 Then install the ROS kinetic package.  
 `$ sudo apt-get install ros-kinetic-desktop `
 
-Once the package is upto date, create the catkin workspace.
+Once the package is updated, create the catkin workspace.
 ```
 $ mkdir -p ~/catkin_ws/src
 $ cd ~/catkin_ws/src
 $ catkin_init_workspace
-$ cd ~/catkin_ws
+$ cd ../
 $ catkin_make
 ```
 
