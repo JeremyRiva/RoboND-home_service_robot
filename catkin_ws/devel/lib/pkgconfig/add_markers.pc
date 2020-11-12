@@ -1,8 +1,0 @@
-prefix=/home/workspace/catkin_ws/devel
-
-Name: add_markers
-Description: Description of add_markers
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 
