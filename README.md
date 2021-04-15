@@ -3,7 +3,7 @@
 
 ## Outline
 
-Programmed a robot to autonomously pick-up and drop-off an object. This was achieved through two nodes: the __pick_objects__ and the __add_markers__.   
+Programmed a robot to autonomously pick-up and drop-off an object. The robot uses the ROS Navigation stack, which is based on the Dijkstra's path planning algorithm (variant of the Uniform Cost Search algorithm), to plan the robot's trajectory from start to goal position. The following nodes were added to mimic the robot picking up and dropping off an object: the __pick_objects__ and the __add_markers__.   
 The pick_objects node commands the robot to move to the chosen pick-up and drop-off zones. While the add_markers node subscribes to the robot odometry, keeps track of the robot pose, and publishes markers to rviz.
 
 <div align="center">
